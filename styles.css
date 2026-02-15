@@ -102,35 +102,44 @@ h3 {
     border-radius: 8px;
     margin-bottom: 25px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-    display: flex;
+    display: block;
     gap: 20px;
 }
 
-.company-logo {
-    width: 60px;
-    height: 60px;
-    background-color: #333;
+/* Company Logo - Image Based */
+.company-logo-img {
+    width: 80px;
+    height: 80px;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: contain;
     flex-shrink: 0;
-    color: white;
-    font-size: 1.5rem;
-}
-
-.company-logo.green {
-    background-color: #27ae60;
+    background-color: #ffffff;
+    padding: 8px;
 }
 
 .job-details {
-    flex: 1;
+    display: block; /* Force vertical stacking */
+    width: 100%;
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid #e0e0e0;
 }
 
+.job-details h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
 .job-title {
     color: #7f8c8d;
     font-size: 0.95rem;
     margin-bottom: 1rem;
+}
+.job-period {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
 }
 
 .job-description {
@@ -185,6 +194,13 @@ h3 {
     gap: 25px;
 }
 
+.project-card img {
+    width: 99%;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
+} 
+
 .project-card {
     background-color: #f8f9fa;
     border-radius: 8px;
@@ -192,25 +208,39 @@ h3 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.08);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make it behave like a block */
+    color: inherit; /* Keep text color */
 }
 
+
+/* on hover - open link */
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-}
-
-.project-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
 }
 
 .project-card h3 {
     padding: 20px;
     font-size: 1.1rem;
     color: #555;
+    transition: color 0.3s; /* Smooth color transition */
 }
 
+.project-card:hover h3 {
+    color: #667eea; /* Change title color on hover */
+}
+
+.project-card h3 {
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+.project-card h4 {
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #555555e7;
+}
 /* Education Section */
 .education {
     background-color: #f9f9f9;
