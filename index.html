@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Luca Mouchel - Portfolio</title>
     <link rel="icon" type="image/jpg" href="assets/images/profile.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,15 +24,18 @@
             </a>
 
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/luca-mouchel/" target="_blank" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/luca-mouchel/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/lucamouchel" target="_blank" aria-label="GitHub">
+                <a href="https://github.com/lucamouchel" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://scholar.google.com/citations?user=p86X8AUAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
+                <a href="https://scholar.google.com/citations?user=p86X8AUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
                     <i class="fas fa-graduation-cap"></i>
-                </a>    
+                </a>
+                <a href="mailto:luca.mouchel@epfl.ch" aria-label="Email Luca">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
     </header>
@@ -86,6 +89,7 @@
                     <ul class="achievements">
                         <li>Integrated Vision Transformers (ViT) into the production training pipeline for sonic log analysis. Developed a highly modular architecture trained from scratch, making the model components modular. Implemented AutoKeras for automated hyperparameter optimization, streamlining model tuning and improving training efficiency.</li>
                         <li>Developed methods to visualize and interpret how CNN models process sonic image data derived from slowness-time coherence wavelet transforms with GradCam++.</li>
+                        <li>Contributed to an ongoing patent application related to the machine learning methods developed in this workstream.</li>
                     </ul>
                     <div class="tags">
                         <span class="tag">ML</span>
@@ -227,24 +231,25 @@
     <section class="education">
         <div class="container">
             <h2>Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>EPFL</h3>
+                    <p class="education-period">MSc Data Science - September 2023 - August 2026</p>
+                    <ul>
+                        <li>Specializing in Data Analysis, AI, NLP, Reinforcement Learning and Mathematics in Data Science.</li>
+                        <li>One of 15 recipients of the MSc Research Scholarship, working part-time at the AI Lab for 1.5 years.</li>
+                    </ul>
+                </div>
 
-            <div class="education-card">
-                <h3>EPFL</h3>
-                <p class="education-period">MSc Data Science - September 2023 - August 2026</p>
-                <ul>
-                    <li>Specializing in Data Analysis, AI, NLP, Reinforcement Learning and Mathematics in Data Science.</li>
-                    <li>One of 15 recipients of the MSc Research Scholarship, working part-time at the AI Lab for 1.5 years.</li>
-                </ul>
-            </div>
-
-            <div class="education-card">
-                <h3>EPFL</h3>
-                <p class="education-period">BSc Communication Systems - September 2020 - July 2023</p>
-                <ul>
-                    <li>Relevant Coursework: Signal Processing, Stochastic Models, ML, Probability and Statistics, Computer networks/security,
-                        Algorithms, Software Engineering.</li>
-                    <li>TA in Linear Algebra and Analysis III (Fourier Series & Transforms, Green, Stoke and Divergence Theorems)</li>
-                </ul>
+                <div class="education-card">
+                    <h3>EPFL</h3>
+                    <p class="education-period">BSc Communication Systems - September 2020 - July 2023</p>
+                    <ul>
+                        <li>Relevant Coursework: Signal Processing, Stochastic Models, ML, Probability and Statistics, Computer networks/security,
+                            Algorithms, Software Engineering.</li>
+                        <li>TA in Linear Algebra and Analysis III (Fourier Series & Transforms, Green, Stoke and Divergence Theorems)</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
